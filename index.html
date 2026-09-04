@@ -7,6 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course_list.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,21 +18,48 @@
         <span>Aminata Yahaya DIABY</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
-    <nav>
-        <ul id="nav-bar" class="navigation">
-            <li><a class="current" href="index.html">Home</a></li>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li  class="current"><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Final</a></li>
-        </ul>
+        </ul>       
     </nav>
-    <main></main>
+    <main>
+        <h1>Home</h1>
+        <div class="section">
+            <div class="sub-title">About Me</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error neque quos beatae officia nihil ipsam deserunt corrupti labore quaerat a aliquam consequuntur, nostrum repellat praesentium pariatur nemo exercitationem consequatur tenetur?</p>
+            </div>
+
+        <div class="section">
+            <div class="sub-title">Student Photo</div>
+            <div class="student-photo">
+                <img  class="student-photo" src="images/image.jpg" alt="student photo" width="160" height="160">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="sub-title">Web Certificate Courses</div>
+            <div class="filter">
+                
+                <button type="button" data-filter="all" class="active">All</button>
+                <button type="button" data-filter="CSE">CSE</button>
+                <button type="button" data-filter="WDD">WDD</button>
+            </div>
+
+            <div class="courses" id="coursesList"></div>
+        </div>
+
+        <p>The total credits for course listed above is <span id="credits"></span></p>
+    </main>
     <footer>
         <div class="social-media">
             <a href="https://github.com/Yahaya2006/wdd231.git"><img src="images/icon_github.svg"></a>
-            <a href="www.linkedin.com/in/aminata-yahaya-diaby-85b217357"><img src="images/icon_linkedin.svg"></a>
-            <a href="https://www.instagram.com/black_day_slam/"><img src="images/icons_instagram.svg"></a>
+            <a href="https://www.linkedin.com/in/aminata-yahaya-diaby-85b217357"><img src="images/icon_linkedin.svg"></a>
+            <a href="https://www.instagram.com/black_day_slam/"><img src="images/icon_instagram.svg" alt="Instagram logo"></a>
         </div>
-        <p>&copy; <span id="current-year"></span> Aminata's site. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> Aminata Yahaya DIABY, Republic of Congo.All rights reserved.</p>
         <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
     

@@ -1,3 +1,59 @@
 @media only screen and (min-width: 320px) {
+     header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+    main > h1,
+    main > p,
+    main > .section:nth-of-type(3) {
+        grid-column: 1 / -1;
+    }
+    main > .section {
+        margin: 0;
+        min-height: 250px;
+    }
+    .filter,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .filter button {
+        width: 100%;
+    }
+
+    div .section 
+
+
+    .filter {
+        gap: 8px;
+        padding: 10px;
+    }
+    .courses {
+        gap: 8px;
+        padding: 0 10px 10px;
+    }
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    ul {
+    display: flex;
+    }
+    .navigation li {
+    border: none;
+    }
 }
