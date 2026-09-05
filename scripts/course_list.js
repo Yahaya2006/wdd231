@@ -93,7 +93,7 @@ function displayCourses(filter = 'all') {
 
     courseListContainer.innerHTML = filteredCourses.map(course => `
         <article class="course${course.completed ? ' completed' : ''}">
-            <h3>${course.subject} ${course.number}: ${course.title}</h3>
+            <h2>${course.subject} ${course.number}: ${course.title}</h2>
         </article>
     `).join('');
 
