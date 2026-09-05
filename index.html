@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/course_list.js" defer></script>
 </head>
@@ -27,20 +30,20 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <div class="section">
-            <div class="sub-title">About Me</div>
-                <p class="presentation">I’m a passionate Software Developer based in Brazzaville, Republic of Congo. I enjoy building useful, simple, and creative digital solutions. I’m constantly learning and improving my skills in web development and software engineering. My goal is to create technology that solves real problems and makes people’s lives easier, so I strive to deliver high-quality work that exceeds expectations.</p>
-            </div>
+        <section class="section">
+            <h2 class="sub-title">About Me</h2>
+                <p class="presentation">I’m a passionate Software Developer based in Brazzaville, Republic of Congo. I enjoy building useful, simple, and creative digital solutions. I’m constantly learning and improving my skills in web development and software engineering. My goal is to create technology that solves real problems and makes people’s lives easier.</p>
+            </section>
 
-        <div class="section">
-            <div class="sub-title">Student Photo</div>
+        <section class="section">
+            <h2 class="sub-title">Student Photo</h2>
             <div class="student-photo">
                 <img class="student-photo" src="images/image.jpg" alt="student photo" width="160">
             </div>
-        </div>
+        </section>
 
-        <div class="section">
-            <div class="sub-title">Web Certificate Courses</div>
+        <section class="section">
+            <h2 class="sub-title">Web Certificate Courses</h2>
             <div class="filter">
                 
                 <button type="button" data-filter="all" class="active">All</button>
@@ -49,7 +52,7 @@
             </div>
 
             <div class="courses" id="coursesList"></div>
-        </div>
+        </section>
 
         <p>The total credits for course listed above is <span id="credits"></span></p>
     </main>
