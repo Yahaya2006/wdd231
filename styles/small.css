@@ -68,12 +68,12 @@ header span {
     justify-content: start;
     column-gap: 2rem;
     padding: .8rem 10px;
-    color: rgb(48, 121, 121);
+    color: #005a5a;
    ;
 }
 .navigation a:hover {
     background-color: rgb(28, 160, 160);
-    color: white;
+    color: #003333;
 }
 .navigation li {
     border-bottom: 1px solid #ccc;
@@ -128,7 +128,7 @@ footer {
 } 
 .presentation {
     margin: 0;
-    color: rgb(205, 186, 186);
+    color: #ffffff;
 }
 .student-photo {
     display: block;
