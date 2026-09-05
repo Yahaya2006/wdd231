@@ -1,6 +1,6 @@
 :root{
-    --first-color: rgb(43, 181, 181);
-    --second-color: #448e8e;
+    --first-color: rgb(91, 211, 211);
+    --second-color: #2f5a5a;
     --background: #2a4141;
     --font-family: 'Slabo 13px', serif;
 }
@@ -74,7 +74,7 @@ header span {
     justify-content: start;
     column-gap: 2rem;
     padding: .8rem 10px;
-    color: #005a5a;
+    color: #024545;
    ;
 }
 .navigation a:hover {
