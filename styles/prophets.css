@@ -1,0 +1,101 @@
+ :root {
+	--page-background: #eeeeee;
+	--card-background: #d3d3e1;
+	--card-border: #5a5ca8;
+	--heading-color: #4e4c96;
+	--text-color: #292936;
+	--shadow: rgba(45, 45, 55, 0.28);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: var(--text-color);
+	font-family: Georgia, 'Times New Roman', serif;
+	background: linear-gradient(135deg, #f7f7f7 0%, var(--page-background) 100%);
+}
+
+header,
+main,
+footer {
+	width: min(100% - 2rem, 1200px);
+	margin-inline: auto;
+}
+
+header {
+	padding: 1rem 0 0.75rem;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	color: var(--heading-color);
+	font-size: clamp(1.7rem, 4vw, 2.5rem);
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+main {
+	padding: 0 0 1.5rem;
+}
+
+#cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 0.25rem;
+	padding: 1rem;
+	border: 1px solid #d0d0d0;
+	background-color: #e1e1e1;
+	box-shadow: 0 0 1.25rem var(--shadow);
+}
+
+#cards section {
+	display: flex;
+	min-height: 330px;
+	padding: 1rem 0.75rem;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid var(--card-border);
+	background-color: var(--card-background);
+	text-align: center;
+}
+
+#cards h2 {
+	margin: 0 0 0.7rem;
+	color: var(--heading-color);
+	font-size: 1.25rem;
+	line-height: 1.2;
+}
+
+#cards p {
+	margin: 0 0 0.7rem;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 0.85rem;
+	line-height: 1.45;
+}
+
+#cards img {
+	display: block;
+	width: min(100%, 170px);
+	height: 220px;
+	margin-top: auto;
+	object-fit: cover;
+	box-shadow: 0 0.25rem 0.5rem var(--shadow);
+}
+
+footer {
+	padding: 1rem;
+	color: var(--heading-color);
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+@media (min-width: 700px) {
+	#cards {
+		gap: 0.25rem;
+		padding: 1rem;
+	}
+}
