@@ -1,0 +1,234 @@
+:root{
+    --primary-color: green;
+    --secondary-color: yellow;
+    --tertiary-color: red;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --font-family: charis sil, serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: #f5f5f5;
+}
+
+/* header and footer styles */
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+
+header img{
+    display: block;
+    width: 300px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.hamburger{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    justify-self: end;
+}
+
+.hamburger::after{
+    content: "☰";
+    font-size: 1.5rem;
+}
+.hamburger.show::after {
+    content: "✕";
+    font-size: 1.5rem;
+}
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+.navigation li {
+    border-bottom: 1px solid #ccc;
+}
+.navigation li.current {
+    background-color: rgb(214, 214, 214);
+}
+
+footer {
+    background-color: #e6e6e6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+    color: #333;
+        max-width: 100%;
+  }
+ 
+  footer .contact p {
+    margin: 2px 0;
+  }
+ 
+  footer .contact p:first-child {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+ 
+    footer .social-media {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+ 
+    footer .social-media a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    }
+
+    footer .social-media img {
+        width: 32px;
+        height: 32px;
+  }
+ 
+  footer .credits {
+    text-align: right;
+  }
+ 
+  footer .credits p {
+    margin: 2px 0;
+  }
+
+  /* ---------------------- */
+  /* directory styles */
+  /* ---------------------- */
+  header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  margin-bottom: 15px;
+}
+
+.toolbar button {
+  padding: 6px 16px;
+  margin-right: 8px;
+  border: 1px solid #999;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.toolbar button.active {
+  background-color: #12A83B;
+  color: #fff;
+  border-color: #12A83B;
+}
+
+/* Grid view */
+#memberContainer.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* List view */
+#memberContainer.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  position: relative;
+}
+
+.member-card img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+}
+
+.list-view .member-card img {
+  max-width: 100px;
+  max-height: 80px;
+  float: left;
+  margin-right: 12px;
+}
+
+.member-card h3 {
+  margin: 8px 0 2px;
+}
+
+.member-card .tagline {
+  font-size: 13px;
+  color: #555;
+  margin: 0 0 6px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FFD400;
+  color: #222;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.level-3 .badge {
+  background-color: #E8491D;
+  color: #fff;
+}
+
+.level-2 .badge {
+  background-color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #eee;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+
+ 

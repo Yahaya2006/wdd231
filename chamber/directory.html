@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory page for the Brazzaville Chamber of Commerce website, listing member businesses and providing information on how to join the chamber.">
+    <meta name="author" content="Aminata Yahaya DIABY">
+    <link href="images/myfav.ico" rel="icon" type="image/x-icon">
+    <meta property="og:title" content="Brazzaville Chamber of Commerce">
+    <meta property="og:description" content="Connecting local businesses in Brazzaville. Find member businesses, learn about the community, and join the chamber.">
+    <meta property="og:image" content="https://byui-cse.github.io/wdd231-ww-course/images/brazzaville-chamber-cover.jpg">
+    <meta property="og:url" content="https://byui-cse.github.io/wdd231-ww-course/index.html">
+    <title>Directory - Brazzaville Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/brazzaville_chamber_logo.svg" alt="site logo" width="500" height="500">
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+          <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+          </ul>       
+    </nav>
+    <main>
+        <h2>Business Directory</h2>
+          <div class="toolbar">
+                <button id="gridBtn" class="active">Grid</button>
+                <button id="listBtn">List</button>
+          </div>
+
+        <section id="memberContainer" class="grid-view"></section>
+    </main>
+    
+    
+    <footer>
+         <div class="contact">
+             <p>Brazzaville Chamber of Commerce</p>
+             <p>Avenue de la Paix</p>
+             <p>Brazzaville, Republic of the Congo</p>
+             <p>info@brazzavillecc.org</p>
+             <p>+242 06 000 0000</p>
+         </div>
+         <div class="social-media">
+            <a href="https://github.com/Yahaya2006/wdd231.git"><img src="images/icon_github.svg" alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/aminata-yahaya-diaby-85b217357"><img src="images/icon_linkedin.svg" alt="LinkedIn logo"></a>
+            <a href="https://www.instagram.com/black_day_slam/"><img src="images/icon_instagram.svg" alt="Instagram logo"></a>
+        </div>
+
+        <div class="credits">
+            <p>WDD 231 Class Project</p>
+            <p>Aminata Yahaya DIABY</p>
+            <p>&copy; <span id="current-year"></span> Brazzaville Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>

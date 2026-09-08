@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Congo River Hotel",
+      "address": "12 Avenue de la Paix, Brazzaville",
+      "phone": "+242 06 111 2233",
+      "url": "https://congoriverhotel.cg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-NgJy0ucO7GdClOAVKJIO085dcnAb5JXHjPc3w8MXA&s=10",
+      "membership": 3,
+      "tagline": "Riverside hotel and event venue"
+    },
+    {
+      "name": "Poto-Poto Tailoring",
+      "address": "45 Rue de Poto-Poto, Brazzaville",
+      "phone": "+242 06 222 3344",
+      "url": "https://potopototailoring.cg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTu-0g5lvkdeY-81H3R_evEzi2vRx9EW_7SmopRoUjAAkkRiZsIzDTagY&s=10",
+      "membership": 1,
+      "tagline": "Custom fabric and tailoring shop"
+    },
+    {
+      "name": "Brazza Digital Bank",
+      "address": "78 Boulevard Denis Sassou Nguesso, Brazzaville",
+      "phone": "+242 06 333 4455",
+      "url": "https://brazzadigitalbank.cg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSLQFgq5t55--O40FlfsCZvqQ1Z7pQPLhnbE68uTPpnoph0O9uwL7uxZ4&s=10",
+      "membership": 3,
+      "tagline": "Modern banking for local businesses"
+    },
+    {
+      "name": "Malonga Fresh Market",
+      "address": "9 Marche Total, Brazzaville",
+      "phone": "+242 06 444 5566",
+      "url": "https://malongafreshmarket.cg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhkdVO_3_9CX8kuE2E0veEJB0ZcJU9jlUrBV7PrVRIQCpNxljU1gjN4prQ&s=10",
+      "membership": 1,
+      "tagline": "Fresh produce and local goods"
+    },
+    {
+      "name": "Nkodia Logistics",
+      "address": "23 Route du Port, Brazzaville",
+      "phone": "+242 06 555 6677",
+      "url": "https://nkodialogistics.cg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlTGcgehbpAiaBlwWQYmOwT9l286JF6EJP8jtQygw4Dm9fhVPjTAvlX3w_&s=10",
+      "membership": 2,
+      "tagline": "River port freight and shipping"
+    },
+    {
+      "name": "Sarah's Cafe",
+      "address": "5 Avenue Foch, Brazzaville",
+      "phone": "+242 06 666 7788",
+      "url": "https://sarahscafe.cg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Wo6ZsRUy4J6WjcMXbrsQ-CHWyxpx3mvJkon2J-nmWkMREYKF9cqOX3o&s=10",
+      "membership": 2,
+      "tagline": "Coffee, pastries, and coworking space"
+    },
+    {
+      "name": "Congo Telecom Solutions",
+      "address": "60 Avenue Charles de Gaulle, Brazzaville",
+      "phone": "+242 06 777 8899",
+      "url": "https://congotelecomsolutions.cg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrfdiB-qgyK78KoMcFe32heqEU4u-CsPFK7E5RAvsg5MaoPpKSGkd4NIP5&s=10",
+      "membership": 3,
+      "tagline": "Internet and mobile services for business"
+    }
+  ]
+}
