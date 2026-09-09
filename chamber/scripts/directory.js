@@ -31,8 +31,8 @@ function displayMembers(companies) {
       : `images/${company.image}`;
 
     card.innerHTML = `
-      <img src="${imageSource}" alt="${company.name}" width="400" height="225" loading="lazy" decoding="async">
-      <h3>${company.name}</h3>
+      <img src="${imageSource}" alt="${company.name}" width="400" height="225" ${companies.indexOf(company) === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'} decoding="async">
+      <h2>${company.name}</h2>
       <p class="tagline">${company.tagline}</p>
       <p>${company.address}</p>
       <p>${company.phone}</p>

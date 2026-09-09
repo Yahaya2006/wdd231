@@ -203,8 +203,9 @@ a:focus-visible {
   margin-right: 12px;
 }
 
-.member-card h3 {
+.member-card h2 {
   margin: 8px 0 2px;
+  font-size: 1.1rem;
 }
 
 .member-card .tagline {
