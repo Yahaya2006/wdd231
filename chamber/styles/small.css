@@ -87,7 +87,8 @@ footer {
     gap: 20px;
     font-size: 14px;
     color: #333;
-        max-width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
   }
  
   footer .contact p {
