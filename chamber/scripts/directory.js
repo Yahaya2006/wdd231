@@ -31,12 +31,12 @@ function displayMembers(companies) {
       : `images/${company.image}`;
 
     card.innerHTML = `
-      <img src="${imageSource}" alt="${company.name}" loading="lazy">
+      <img src="${imageSource}" alt="${company.name}" width="400" height="225" loading="lazy" decoding="async">
       <h3>${company.name}</h3>
       <p class="tagline">${company.tagline}</p>
       <p>${company.address}</p>
       <p>${company.phone}</p>
-      <p><a href="${company.url}" target="_blank">${company.url}</a></p>
+      <p><a href="${company.url}" target="_blank" rel="noopener noreferrer">${company.url}</a></p>
       <span class="badge">${membershipLabels[company.membership]}</span>
     `;
 
@@ -57,6 +57,8 @@ gridBtn.addEventListener("click", () => {
   container.classList.add("grid-view");
   gridBtn.classList.add("active");
   listBtn.classList.remove("active");
+  gridBtn.setAttribute("aria-pressed", "true");
+  listBtn.setAttribute("aria-pressed", "false");
 });
 
 listBtn.addEventListener("click", () => {
@@ -64,6 +66,8 @@ listBtn.addEventListener("click", () => {
   container.classList.add("list-view");
   listBtn.classList.add("active");
   gridBtn.classList.remove("active");
+  listBtn.setAttribute("aria-pressed", "true");
+  gridBtn.setAttribute("aria-pressed", "false");
 });
 
 // -------------------------------------------

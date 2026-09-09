@@ -10,4 +10,5 @@ lastModified.textContent = document.lastModified;
 navbutton.addEventListener('click', () => {
      navbutton.classList.toggle('show');
      navBar.classList.toggle('show');
+     navbutton.setAttribute('aria-expanded', navbutton.classList.contains('show'));
 });

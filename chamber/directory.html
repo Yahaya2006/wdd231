@@ -20,8 +20,8 @@
 </head>
 <body>
     <header>
-        <img src="images/brazzaville_chamber_logo.svg" alt="site logo" width="500" height="500">
-        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+        <img src="images/brazzaville_chamber_logo.svg" alt="Brazzaville Chamber of Commerce logo" width="500" height="500">
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"></button>
     </header>
     <nav id="nav-bar" class="navigation">
           <ul>
@@ -34,8 +34,8 @@
     <main>
         <h1>Business Directory</h1>
           <div class="toolbar">
-                <button id="gridBtn" class="active">Grid</button>
-                <button id="listBtn">List</button>
+                <button id="gridBtn" type="button" class="active" aria-pressed="true">Grid</button>
+                <button id="listBtn" type="button" aria-pressed="false">List</button>
           </div>
 
         <section id="memberContainer" class="grid-view"></section>
