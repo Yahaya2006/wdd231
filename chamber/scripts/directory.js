@@ -34,7 +34,7 @@ function displayMembers(companies) {
       <img src="${imageSource}" alt="${company.name}" width="400" height="225" ${companies.indexOf(company) === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'} decoding="async">
       <h2>${company.name}</h2>
       <p class="tagline">${company.tagline}</p>
-      <p>${company.address}</p>
+      <p>${company.email}</p>
       <p>${company.phone}</p>
       <p><a href="${company.url}" target="_blank" rel="noopener noreferrer">${company.url}</a></p>
       <span class="badge">${membershipLabels[company.membership]}</span>

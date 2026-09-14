@@ -2,7 +2,7 @@
   "companies": [
     {
       "name": "Congo River Hotel",
-      "address": "12 Avenue de la Paix, Brazzaville",
+      "email": "contact@congoriverhotel.cg",
       "phone": "+242 06 111 2233",
       "url": "https://congoriverhotel.cg",
       "image": "../images/hotel.jpeg",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Poto-Poto Tailoring",
-      "address": "45 Rue de Poto-Poto, Brazzaville",
+      "email": "hello@potopototailoring.cg",
       "phone": "+242 06 222 3344",
       "url": "https://potopototailoring.cg",
       "image": "../images/tailor.jpeg",
@@ -20,7 +20,7 @@
     },
     {
       "name": "Brazza Digital Bank",
-      "address": "78 Boulevard Denis Sassou Nguesso, Brazzaville",
+      "email": "info@brazzadigitalbank.cg",
       "phone": "+242 06 333 4455",
       "url": "https://brazzadigitalbank.cg",
       "image": "../images/digital.jpeg",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Malonga Fresh Market",
-      "address": "9 Marche Total, Brazzaville",
+      "email": "sales@malongafreshmarket.cg",
       "phone": "+242 06 444 5566",
       "url": "https://malongafreshmarket.cg",
       "image": "../images/market.jpeg",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Nkodia Logistics",
-      "address": "23 Route du Port, Brazzaville",
+      "email": "contact@nkodialogistics.cg",
       "phone": "+242 06 555 6677",
       "url": "https://nkodialogistics.cg",
       "image": "../images/kodia.jpeg",
@@ -47,7 +47,7 @@
     },
     {
       "name": "Sarah's Cafe",
-      "address": "5 Avenue Foch, Brazzaville",
+      "email": "hello@sarahscafe.cg",
       "phone": "+242 06 666 7788",
       "url": "https://sarahscafe.cg",
       "image": "../images/cafe.jpeg",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Congo Telecom Solutions",
-      "address": "60 Avenue Charles de Gaulle, Brazzaville",
+      "email": "support@congotelecom.cg",
       "phone": "+242 06 777 8899",
       "url": "https://congotelecomsolutions.cg",
       "image": "../images/telecom.jpeg",
