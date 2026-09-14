@@ -82,7 +82,7 @@ header img{
     border-bottom: 1px solid var(--border-color);
 }
 .navigation li.current {
-    background-color: var(--muted-surface-color);
+  background-color: var(--surface-color);
 }
 
 footer {
