@@ -1,9 +1,16 @@
 :root{
-    --primary-color: green;
-    --secondary-color: yellow;
-    --tertiary-color: red;
-    --background-color: #ffffff;
-    --text-color: #000000;
+  --primary-color: #087f2e;
+  --secondary-color: #ffd400;
+  --tertiary-color: #e8491d;
+  --background-color: #f5f5f5;
+  --text-color: #222222;
+  --surface-color: #ffffff;
+  --border-color: #cccccc;
+  --muted-surface-color: #e6e6e6;
+  --muted-text-color: #555555;
+  --focus-color: #b05a00;
+  --control-border-color: #999999;
+  --control-surface-color: #eeeeee;
     --font-family: 'Charis SIL', serif;
 }
 
@@ -13,7 +20,7 @@
 
 body{
     font-family: var(--font-family);
-    background-color: #f5f5f5;
+  background-color: var(--background-color);
 }
 
 /* header and footer styles */
@@ -21,7 +28,7 @@ header{
     display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
     padding: 5px 0 5px 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--border-color);
     align-items: center;
 }
 
@@ -72,21 +79,21 @@ header img{
     color: var(--tertiary-color);
 }
 .navigation li {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--border-color);
 }
 .navigation li.current {
-    background-color: rgb(214, 214, 214);
+    background-color: var(--muted-surface-color);
 }
 
 footer {
-    background-color: #e6e6e6;
+    background-color: var(--muted-surface-color);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
     font-size: 14px;
-    color: #333;
+    color: var(--text-color);
     max-width: 100%;
     margin-top: 30px;
     text-align: center;
@@ -150,21 +157,21 @@ main {
 .toolbar button {
   padding: 6px 16px;
   margin-right: 8px;
-  border: 1px solid #999;
-  background-color: #eee;
+  border: 1px solid var(--control-border-color);
+  background-color: var(--control-surface-color);
   cursor: pointer;
 }
 
 .toolbar button.active {
-  background-color: #087f2e;
-  color: #fff;
-  border-color: #087f2e;
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+  border-color: var(--primary-color);
 }
 
 .toolbar button:focus-visible,
 .navigation a:focus-visible,
 a:focus-visible {
-  outline: 3px solid #b05a00;
+  outline: 3px solid var(--focus-color);
   outline-offset: 2px;
 }
 
@@ -183,10 +190,10 @@ a:focus-visible {
 }
 
 .member-card {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   padding: 12px;
   position: relative;
-  background-color: #fff;
+  background-color: var(--surface-color);
   min-width: 0;
 }
 
@@ -211,7 +218,7 @@ a:focus-visible {
 
 .member-card .tagline {
   font-size: 13px;
-  color: #555;
+  color: var(--muted-text-color);
   margin: 0 0 6px;
 }
 
@@ -223,26 +230,26 @@ a:focus-visible {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #FFD400;
-  color: #222;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   font-size: 11px;
   padding: 2px 8px;
   border-radius: 10px;
 }
 
 .level-3 .badge {
-  background-color: #E8491D;
-  color: #fff;
+  background-color: var(--tertiary-color);
+  color: var(--surface-color);
 }
 
 .level-2 .badge {
-  background-color: #ccc;
+  background-color: var(--border-color);
 }
 
 /* footer {
   text-align: center;
   padding: 15px;
-  background-color: #eee;
+  background-color: var(--control-surface-color);
   font-size: 13px;
   margin-top: 30px;
 } */
