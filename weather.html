@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Current weather in Trier, Germany">
+    <title>Weather in Trier</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/weather.css">
+</head>
+<body>
+    <main class="weather-card">
+        <header class="weather-header">
+            <p class="eyebrow">OpenWeatherMap</p>
+            <h1>Today's weather</h1>
+        </header>
+        <section class="weather-content">
+            <p class="summary">The current temperature in <span id="townName"></span> is <span id="current-temp"></span>.</p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+        <footer>
+            [Aminata Yahaya DIABY] | OpenWeatherMap | CC BY-SA 4.0
+        </footer>
+    </main>
+
+    <script src="scripts/weather.js" defer></script>
+</body>
+</html>
