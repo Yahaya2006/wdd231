@@ -82,7 +82,7 @@ header img{
     border-bottom: 1px solid var(--border-color);
 }
 .navigation li.current {
-  background-color: #1e8a3e;
+  background-color: #205B30;
 }
 
 .navigation li.current a {
