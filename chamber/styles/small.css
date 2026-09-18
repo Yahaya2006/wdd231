@@ -4,7 +4,7 @@
   --tertiary-color: #681D08;
   --background-color: #f5f5f5;
   --text-color: #222222;
-  --surface-color: #f9dfdf;
+  --surface-color: #ffffff;
   --border-color: #cccccc;
   --muted-surface-color: #e6e6e6;
   --muted-text-color: #555555;
@@ -82,7 +82,7 @@ header img{
     border-bottom: 1px solid var(--border-color);
 }
 .navigation li.current {
-  background-color: var(--surface-color);
+  background-color: #d2deb4;
 }
 
 footer {
