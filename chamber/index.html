@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory page for the Brazzaville Chamber of Commerce website, listing member businesses and providing information on how to join the chamber.">
+    <meta name="description" content="Home page of the Brazzaville Chamber of Commerce website, featuring local events, weather, and member business spotlights.">
     <meta name="author" content="Aminata Yahaya DIABY">
     <link href="images/myfav.ico" rel="icon" type="image/x-icon">
     <meta property="og:title" content="Brazzaville Chamber of Commerce">
     <meta property="og:description" content="Connecting local businesses in Brazzaville. Find member businesses, learn about the community, and join the chamber.">
-    <meta property="og:image" content="https://yahaya2006.github.io/wdd231/chamber/directory.html">
-    <meta property="og:url" content="https://yahaya2006.github.io/wdd231/chamber/directory.html">
-    <title>Directory - Brazzaville Chamber of Commerce</title>
+    <meta property="og:image" content="https://yahaya2006.github.io/wdd231/chamber/images/brazzaville_chamber_logo.svg">
+    <meta property="og:url" content="https://yahaya2006.github.io/wdd231/chamber/index.html">
+    <title>Home - Brazzaville Chamber of Commerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-NgJy0ucO7GdClOAVKJIO085dcnAb5JXHjPc3w8MXA&amp;s=10" fetchpriority="high">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,24 +28,43 @@
     </header>
     <nav id="nav-bar" class="navigation">
           <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
           </ul>       
     </nav>
-    <main>
-        <h1>Business Directory</h1>
-          <div class="toolbar">
-                <button id="gridBtn" type="button" class="active" aria-pressed="true">Grid</button>
-                <button id="listBtn" type="button" aria-pressed="false">List</button>
-          </div>
+    <main class="home">
 
-        <section id="memberContainer" class="grid-view"></section>
-    </main>
-    
-    
-    <footer>
+    <section class="hero">
+        <img src="images/hero.jpg" alt="View of Brazzaville along the Congo River" width="1200" height="600">
+        <a href="join.html" class="cta">Join the Chamber</a>
+    </section>
+
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><strong>Oct 12</strong> — Business Networking Breakfast, Congo River Hotel</li>
+            <li><strong>Oct 20</strong> — Digital Marketing Workshop for Small Businesses</li>
+            <li><strong>Nov 2</strong> — Annual Chamber Gala &amp; Awards Night</li>
+        </ul>
+    </section>
+
+    <section class="weather">
+        <h2>Brazzaville Weather</h2>
+        <div id="current-weather"></div>
+        <div id="forecast" class="forecast"></div>
+    </section>
+
+    <section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlightContainer" class="spotlight-grid"></div>
+    </section>
+
+</main>
+
+</body>
+<footer>
          <div class="contact">
              <p>Brazzaville Chamber of Commerce</p>
              <p>Avenue de la Paix</p>
@@ -67,5 +86,3 @@
         </div>
 
     </footer>
-</body>
-</html>

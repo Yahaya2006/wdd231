@@ -257,3 +257,99 @@ a:focus-visible {
 
 
  
+/* ---------------------- */
+/* home page styles */
+/* ---------------------- */
+
+.home .hero {
+    position: relative;
+}
+
+.home .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home .hero .cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.home .hero .cta:hover {
+    background-color: var(--tertiary-color);
+}
+
+.home section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.home .events ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.home .events li {
+    border-bottom: 1px solid var(--border-color);
+    padding: .6rem 0;
+}
+
+#current-weather {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home .forecast {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.home .forecast .day {
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 80px;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.spotlight-card {
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    padding: 12px;
+    position: relative;
+}
+
+.spotlight-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.spotlight-card h3 {
+    margin: 8px 0 2px;
+    font-size: 1.1rem;
+}
+
+
+
