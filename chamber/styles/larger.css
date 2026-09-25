@@ -59,5 +59,19 @@
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
+
+
+    /* join page - larger screens */
+    .join {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    .membership-cards {
+        margin-top: 0;
+    }
+
 }
  

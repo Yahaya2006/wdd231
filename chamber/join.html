@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Membership application page for the Brazzaville Chamber of Commerce. Apply to join at the NP, Bronze, Silver, or Gold level.">
+    <meta name="author" content="Aminata Yahaya DIABY">
+    <link href="images/myfav.ico" rel="icon" type="image/x-icon">
+    <meta property="og:title" content="Join - Brazzaville Chamber of Commerce">
+    <meta property="og:description" content="Apply to join the Brazzaville Chamber of Commerce and connect with local businesses.">
+    <meta property="og:image" content="https://yahaya2006.github.io/wdd231/chamber/images/brazzaville_chamber_logo.svg">
+    <meta property="og:url" content="https://yahaya2006.github.io/wdd231/chamber/join.html">
+    <title>Join - Brazzaville Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/brazzaville_chamber_logo.svg" alt="Brazzaville Chamber of Commerce logo" width="500" height="500">
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main class="join">
+
+        <section class="join-form">
+            <h1>Join the Chamber</h1>
+            <p>Fill out the form below to apply for membership. Our team will follow up within two business days.</p>
+
+            <form action="thankyou.html" method="get">
+
+                <label for="fname">
+                    First Name
+                    <input type="text" id="fname" name="fname" title="Your first name" autocomplete="given-name" required>
+                </label>
+
+                <label for="lname">
+                    Last Name
+                    <input type="text" id="lname" name="lname" title="Your last name" autocomplete="family-name" required>
+                </label>
+
+                <label for="jobtitle">
+                    Organizational Title
+                    <input type="text" id="jobtitle" name="jobtitle" title="Your title within your organization"
+                           autocomplete="organization-title"
+                           pattern="[A-Za-z\s\-]{7,}"
+                           placeholder="e.g. Marketing Director">
+                </label>
+
+                <label for="email">
+                    Email Address
+                    <input type="email" id="email" name="email" title="Your email address"
+                           autocomplete="email" placeholder="name@example.com" required>
+                </label>
+
+                <label for="phone">
+                    Mobile Phone
+                    <input type="tel" id="phone" name="phone" title="Your mobile phone number"
+                           autocomplete="tel" required>
+                </label>
+
+                <label for="orgname">
+                    Business/Organization Name
+                    <input type="text" id="orgname" name="orgname" title="The name of your business or organization"
+                           autocomplete="organization" required>
+                </label>
+
+                <label for="membership">
+                    Membership Level
+                    <select id="membership" name="membership" title="Select a membership level" required>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">
+                    Business/Organization Description
+                    <textarea id="description" name="description" title="Briefly describe your business or organization" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Submit Application">
+
+            </form>
+        </section>
+
+        <section class="membership-cards">
+
+            <div class="card np">
+                <h2>NP Membership</h2>
+                <p>Free for registered non-profit organizations.</p>
+                <button type="button" class="modal-btn" data-modal="modal-np">Learn more</button>
+            </div>
+
+            <div class="card bronze">
+                <h2>Bronze Membership</h2>
+                <p>Entry-level membership for growing businesses.</p>
+                <button type="button" class="modal-btn" data-modal="modal-bronze">Learn more</button>
+            </div>
+
+            <div class="card silver">
+                <h2>Silver Membership</h2>
+                <p>Extra visibility and event benefits.</p>
+                <button type="button" class="modal-btn" data-modal="modal-silver">Learn more</button>
+            </div>
+
+            <div class="card gold">
+                <h2>Gold Membership</h2>
+                <p>Full benefits and homepage spotlight rotation.</p>
+                <button type="button" class="modal-btn" data-modal="modal-gold">Learn more</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <dialog id="modal-np" class="membership-modal">
+        <h2>NP Membership Benefits</h2>
+        <ul>
+            <li>Free membership, no annual fee</li>
+            <li>Basic directory listing</li>
+            <li>Invitation to chamber networking events</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+            <li>Directory listing with business logo</li>
+            <li>Member pricing on chamber events</li>
+            <li>One social media feature per year</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+            <li>Everything in Bronze</li>
+            <li>Two newsletter features per year</li>
+            <li>Discounted tickets to the annual gala</li>
+            <li>Listed as a recommended vendor</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+            <li>Everything in Silver</li>
+            <li>Homepage spotlight rotation</li>
+            <li>VIP invitations to chamber events</li>
+            <li>Sponsorship opportunities at chamber events</li>
+            <li>Access to quarterly business trainings</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <div class="contact">
+            <p>Brazzaville Chamber of Commerce</p>
+            <p>Avenue de la Paix</p>
+            <p>Brazzaville, Republic of the Congo</p>
+            <p>info@brazzavillecc.org</p>
+            <p>+242 06 000 0000</p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/Yahaya2006/wdd231.git"><img src="images/icon_github.svg" alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/aminata-yahaya-diaby-85b217357"><img src="images/icon_linkedin.svg" alt="LinkedIn logo"></a>
+            <a href="https://www.instagram.com/black_day_slam/"><img src="images/icon_instagram.svg" alt="Instagram logo"></a>
+        </div>
+        <div class="credits">
+            <p>WDD 231 Class Project</p>
+            <p>Aminata Yahaya DIABY</p>
+            <p>&copy; <span id="current-year"></span> Brazzaville Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

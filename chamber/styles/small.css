@@ -353,3 +353,143 @@ a:focus-visible {
 
 
 
+
+/* join page styles */
+
+.join {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.join-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    font-family: var(--font-family);
+    font-weight: normal;
+    padding: 8px;
+    border: 1px solid var(--control-border-color);
+    border-radius: 4px;
+}
+
+.join-form input:invalid:not(:placeholder-shown) {
+    border-color: var(--tertiary-color);
+}
+
+.join-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: var(--tertiary-color);
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.membership-cards .card {
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    padding: 16px;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: card-in .5s ease forwards;
+}
+
+.membership-cards .card:nth-child(1) { animation-delay: .1s; }
+.membership-cards .card:nth-child(2) { animation-delay: .25s; }
+.membership-cards .card:nth-child(3) { animation-delay: .4s; }
+.membership-cards .card:nth-child(4) { animation-delay: .55s; }
+
+@keyframes card-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-cards .card h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.membership-cards .card.np    { border-left: 5px solid var(--border-color); }
+.membership-cards .card.bronze{ border-left: 5px solid #a05a2c; }
+.membership-cards .card.silver{ border-left: 5px solid #b0b0b0; }
+.membership-cards .card.gold  { border-left: 5px solid var(--secondary-color); }
+
+.modal-btn {
+    background-color: var(--control-surface-color);
+    border: 1px solid var(--control-border-color);
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+.membership-modal {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.membership-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    margin-top: 12px;
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* thank you page styles */
+
+.thankyou {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thankyou dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 16px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+}
+
+.thankyou dt {
+    font-weight: bold;
+}
+
+.thankyou dd {
+    margin: 0;
+}
