@@ -1,3 +1,6 @@
+// ---------------------------------------------------
+// 1. La liste des cours (les données)
+// ---------------------------------------------------
 const courses = [
     {
         subject: 'CSE',
@@ -5,10 +8,8 @@ const courses = [
         title: 'Introduction to Programming',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: [
-            'Python'
-        ],
+        description: 'This course will introduce students to programming...',
+        technology: ['Python'],
         completed: true
     },
     {
@@ -17,11 +18,8 @@ const courses = [
         title: 'Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: [
-            'HTML',
-            'CSS'
-        ],
+        description: 'This course introduces students to the World Wide Web...',
+        technology: ['HTML', 'CSS'],
         completed: true
     },
     {
@@ -30,10 +28,8 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: [
-            'Python'
-        ],
+        description: 'CSE 111 students become more organized, efficient...',
+        technology: ['Python'],
         completed: false
     },
     {
@@ -42,10 +38,8 @@ const courses = [
         title: 'Programming with Classes',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: [
-            'C#'
-        ],
+        description: 'This course will introduce the notion of classes...',
+        technology: ['C#'],
         completed: false
     },
     {
@@ -54,12 +48,8 @@ const courses = [
         title: 'Dynamic Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        description: 'This course builds on prior experience in Web Fundamentals...',
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: true
     },
     {
@@ -68,45 +58,110 @@ const courses = [
         title: 'Frontend Web Development I',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        description: 'This course builds on prior experience with Dynamic Web Fundamentals...',
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: false
     }
-]
+];
 
+// ---------------------------------------------------
+// 2. On récupère les éléments HTML dont on a besoin
+// ---------------------------------------------------
 const courseListContainer = document.getElementById('coursesList');
 const creditsContainer = document.getElementById('credits');
 const filterButtons = document.querySelectorAll('[data-filter]');
+const courseDetails = document.getElementById('course-details');
 
-function displayCourses(filter = 'all') {
-    const filteredCourses = filter === 'all'
-        ? courses
-        : courses.filter(course => course.subject === filter);
+// ---------------------------------------------------
+// 3. Fonction qui affiche la liste des cours
+// ---------------------------------------------------
+function displayCourses(filter) {
+    // Si aucun filtre n'est donné, on affiche "all" par défaut
+    if (filter === undefined) {
+        filter = 'all';
+    }
 
-    filterButtons.forEach(button => {
-        button.classList.toggle('active', button.dataset.filter === filter);
-    });
+    // On vide le contenu actuel de la liste
+    courseListContainer.innerHTML = '';
 
-    courseListContainer.innerHTML = filteredCourses.map(course => `
-        <article class="course${course.completed ? ' completed' : ''}">
-            <p>${course.subject} ${course.number}: ${course.title}</p>
-        </article>
-    `).join('');
+    // On garde en mémoire le total de crédits
+    let totalCredits = 0;
 
-    creditsContainer.textContent = filteredCourses.reduce(
-        (total, course) => total + course.credits,
-        0
-    );
+    // On met à jour quel bouton de filtre est actif
+    for (let i = 0; i < filterButtons.length; i++) {
+        const button = filterButtons[i];
+        if (button.dataset.filter === filter) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    }
+
+    // On parcourt chaque cours un par un (boucle simple)
+    for (let i = 0; i < courses.length; i++) {
+        const course = courses[i];
+
+        // Si on filtre et que ce cours ne correspond pas, on passe au suivant
+        if (filter !== 'all' && course.subject !== filter) {
+            continue;
+        }
+
+        // On additionne les crédits de ce cours
+        totalCredits = totalCredits + course.credits;
+
+        // On crée un élément HTML pour ce cours
+        const courseDiv = document.createElement('article');
+        courseDiv.classList.add('course');
+        if (course.completed) {
+            courseDiv.classList.add('completed');
+        }
+        courseDiv.dataset.number = course.number;
+        courseDiv.innerHTML = `<p>${course.subject} ${course.number}: ${course.title}</p>`;
+
+        // Quand on clique sur ce cours, on affiche ses détails
+        courseDiv.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        // On ajoute ce cours dans la liste affichée à l'écran
+        courseListContainer.appendChild(courseDiv);
+    }
+
+    // On affiche le total des crédits
+    creditsContainer.textContent = totalCredits;
 }
 
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        displayCourses(button.dataset.filter);
-    });
-});
+// ---------------------------------------------------
+// 4. Fonction qui affiche les détails d'UN cours
+// ---------------------------------------------------
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
 
+    courseDetails.showModal();
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+// ---------------------------------------------------
+// 5. Quand on clique sur un bouton de filtre, on réaffiche la liste
+// ---------------------------------------------------
+for (let i = 0; i < filterButtons.length; i++) {
+    filterButtons[i].addEventListener('click', () => {
+        displayCourses(filterButtons[i].dataset.filter);
+    });
+}
+
+// ---------------------------------------------------
+// 6. On affiche la liste des cours dès le chargement de la page
+// ---------------------------------------------------
 displayCourses();
