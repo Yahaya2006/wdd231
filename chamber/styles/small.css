@@ -493,3 +493,100 @@ a:focus-visible {
 .thankyou dd {
     margin: 0;
 }
+
+
+
+/* discover page styles */
+/* ---------------------- */
+/* discover page styles */
+/* ---------------------- */
+
+#discover-grid,
+.discover-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h";
+}
+
+#discover-grid .card:nth-child(1),
+.discover-grid .card:nth-child(1) { grid-area: a; }
+#discover-grid .card:nth-child(2),
+.discover-grid .card:nth-child(2) { grid-area: b; }
+#discover-grid .card:nth-child(3),
+.discover-grid .card:nth-child(3) { grid-area: c; }
+#discover-grid .card:nth-child(4),
+.discover-grid .card:nth-child(4) { grid-area: d; }
+#discover-grid .card:nth-child(5),
+.discover-grid .card:nth-child(5) { grid-area: e; }
+#discover-grid .card:nth-child(6),
+.discover-grid .card:nth-child(6) { grid-area: f; }
+#discover-grid .card:nth-child(7),
+.discover-grid .card:nth-child(7) { grid-area: g; }
+#discover-grid .card:nth-child(8),
+.discover-grid .card:nth-child(8) { grid-area: h; }
+
+#discover-grid .card,
+.discover-grid .card {
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#discover-grid .card h2,
+.discover-grid .card h2 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+}
+
+#discover-grid .card figure,
+.discover-grid .card figure {
+    margin: 0 0 8px;
+}
+
+#discover-grid .card img,
+.discover-grid .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+#discover-grid .card address,
+.discover-grid .card address {
+    font-style: normal;
+    font-size: 13px;
+    color: var(--muted-text-color);
+    margin-bottom: 6px;
+}
+
+#discover-grid .card .fact,
+.discover-grid .card .fact {
+    font-size: 13px;
+    color: var(--primary-color);
+    margin-top: 6px;
+}
+
+#discover-grid .card .learn-more,
+.discover-grid .card .learn-more {
+    align-self: flex-start;
+    margin-top: 10px;
+    background-color: var(--control-surface-color);
+    border: 1px solid var(--control-border-color);
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+#visit-message {
+    font-style: italic;
+}
