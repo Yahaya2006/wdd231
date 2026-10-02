@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/discover.js"  type="module" defer></script>
-    <script src="data/discover.mjs" type="module" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+    <script src="data/discover.mjs" type="module"></script>
 
 </head>
 <body>
@@ -41,7 +41,9 @@
         <h1>Discover Brazzaville</h1>
         <p>Eight places that help tell the story of our city — from landmarks to markets to riverside views.</p>
 
-        <section id="discover-grid"></section>
+        <section id="discover-grid" aria-labelledby="discover-heading">
+            <h2 id="discover-heading">Featured places</h2>
+        </section>
 
     </main>
 
