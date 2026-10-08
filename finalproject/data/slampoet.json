@@ -1,0 +1,58 @@
+[
+   {
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Black Panther",
+        "origin": "Republic of Congo", 
+        "city": "Brazzaville",
+        "known": "Poet and slam artist",
+        "year": "2022"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Marc Kelly Smith",
+        "origin": "USA",
+        "city": "Chicago",
+        "known": "Founder of slam poetry and the Uptown Poetry Slam.",
+        "year": "1984"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Saul Williams",
+        "origin": "USA",
+        "city": "New York",
+        "known": "Poet, musician, and actor known for merging hip-hop and spoken word.",
+        "year": "1990s"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Sarah Kay",
+        "origin": "USA",
+        "city": "New York",
+        "known": "Founder of Project VOICE, bringing spoken word poetry to schools.",
+        "year": "2004"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Souleymane Diamanka",
+        "origin": "France",
+        "city": "Bordeaux",
+        "known": "Franco-Senegalese poet who blends Wolof and French in his performances.",
+        "year": "2000s"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Grand Corps Malade",
+        "origin": "France",
+        "city": "Paris",
+        "known": "One of the most famous French slam poets, known for his emotional storytelling.",
+        "year": "2000s"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Gil Scott-Heron",
+        "origin": "USA",
+        "city": "New York",
+        "known": "Pioneer of spoken word and proto-rap, known as the godfather of rap.",
+        "year": "1970s"
+    }
+]

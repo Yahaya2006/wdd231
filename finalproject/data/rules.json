@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Original Work Only",
+    "description": "Poets must perform only their own original work. No covers or adaptations of other poets' material are permitted."
+  },
+  {
+    "title": "Three-Minute Time Limit",
+    "description": "Each performance must not exceed three minutes. Penalties are applied for going over time: 0.5 points per 10 seconds over the limit."
+  },
+  {
+    "title": "No Props or Costumes",
+    "description": "Poets perform with nothing but their voice and body. No musical instruments, costumes, or props of any kind are allowed on stage."
+  },
+  {
+    "title": "Audience as Judges",
+    "description": "Five judges are chosen randomly from the audience before the show begins. This keeps the competition democratic and community-driven."
+  },
+  {
+    "title": "Solo or Group",
+    "description": "Poets can perform solo or as part of a group piece. Group pieces can have up to three performers on stage at the same time."
+  },
+  {
+    "title": "Multiple Rounds",
+    "description": "Competitions typically have two or three rounds. The highest-scoring poets from each round advance to the final round."
+  }
+]
