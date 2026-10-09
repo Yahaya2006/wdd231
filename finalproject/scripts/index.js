@@ -2,6 +2,11 @@ const titleElement = document.getElementById("poemTitle");
 const authorElement = document.getElementById("poemAuthor");
 const excerptElement = document.getElementById("poemExcerpt");
 const loadButton = document.getElementById("loadPoemBtn");
+const joinClubButton = document.getElementById("joinClubBtn");
+
+joinClubButton.addEventListener("click", () => {
+    window.location.href = "contact.html";
+});
 
 let poems = [];
 let currentIndex = 0;
