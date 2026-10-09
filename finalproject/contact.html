@@ -13,14 +13,16 @@
     <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
 </head>
 <body>
-    <header>
+     <header>
         <div class="logo-container">
             <img src="images/logo.png" alt="site logo" width="200" height="150">
             <span class="logo-text">Slamplume</span>
-            <button id="ham-btn" class="hamburger" aria-label="navigation">☰</button>
+            <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
         </div>
         
         <nav id="nav-bar" class="navigation">
@@ -32,7 +34,96 @@
         </nav>
     </header>
     <main>
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Join the SlamVoices Club</h1>
+                <p>Tell us about yourself and we will get in touch to welcome you into our community.</p>
+            </div>
+        </section>
 
+        <section class="content-section" id="join">
+            <div class="container">
+                <h2>Membership Interest Form</h2>
+                <p>Fill out the form below to express your interest in joining a local slam poetry club. All fields marked with <span class="required">*</span> are required.</p>
+
+                <form id="joinForm">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" autocomplete="given-name" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" autocomplete="family-name" placeholder="Enter your last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age Group <span class="required">*</span></label>
+                                <select id="age" name="age" required>
+                                    <option value="">-- Select your age group --</option>
+                                    <option value="under18">Under 18</option>
+                                    <option value="18-25">18–25</option>
+                                    <option value="26-35">26–35</option>
+                                    <option value="36-50">36–50</option>
+                                    <option value="50+">50 and above</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Slam Experience</legend>
+                        <div class="form-group">
+                            <label for="experience">Experience Level <span class="required">*</span></label>
+                            <select id="experience" name="experience" required>
+                                <option value="">-- Select your level --</option>
+                                <option value="beginner">Beginner – I am new to slam poetry</option>
+                                <option value="intermediate">Intermediate – I have attended slams</option>
+                                <option value="experienced">Experienced – I have performed at slams</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <p id="interestsLabel">What interests you most? <span class="required">*</span></p>
+                            <div class="checkbox-group" role="group" aria-labelledby="interestsLabel">
+                                <label class="checkbox-label"><input type="checkbox" name="interests" value="performing"> Performing my own poems</label>
+                                <label class="checkbox-label"><input type="checkbox" name="interests" value="watching"> Watching slam performances</label>
+                                <label class="checkbox-label"><input type="checkbox" name="interests" value="writing"> Writing and improving my craft</label>
+                                <label class="checkbox-label"><input type="checkbox" name="interests" value="community"> Meeting the slam community</label>
+                            </div>
+                            <p class="form-error" id="interestError" role="alert" hidden>Select at least one interest.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell us about yourself</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Share anything you'd like us to know about you..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn-primary">Submit My Interest</button>
+                </form>
+
+                <div class="success-message" id="successMessage" role="status" hidden>
+                    <h3>Thank you for your interest!</h3>
+                    <p id="successText"></p>
+                    <button type="button" class="btn-secondary" id="resetBtn">Submit Another Response</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section alt" id="last-submission">
+            <div class="container">
+                <h2>Your Last Submission</h2>
+                <div id="savedSubmission">
+                    <p class="no-result">No previous submission found.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="current-year"></span> Slamplume. All rights reserved.</p>

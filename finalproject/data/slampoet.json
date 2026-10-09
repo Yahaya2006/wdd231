@@ -1,6 +1,5 @@
 [
    {
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "name": "Black Panther",
         "origin": "Republic of Congo", 
         "city": "Brazzaville",
@@ -8,7 +7,6 @@
         "year": "2022"
     },
     {
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "name": "Marc Kelly Smith",
         "origin": "USA",
         "city": "Chicago",
@@ -16,7 +14,6 @@
         "year": "1984"
     },
     {
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "name": "Saul Williams",
         "origin": "USA",
         "city": "New York",
@@ -24,7 +21,6 @@
         "year": "1990s"
     },
     {
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "name": "Sarah Kay",
         "origin": "USA",
         "city": "New York",
@@ -32,7 +28,6 @@
         "year": "2004"
     },
     {
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "name": "Souleymane Diamanka",
         "origin": "France",
         "city": "Bordeaux",
@@ -40,7 +35,6 @@
         "year": "2000s"
     },
     {
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "name": "Grand Corps Malade",
         "origin": "France",
         "city": "Paris",
@@ -48,7 +42,6 @@
         "year": "2000s"
     },
     {
-        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "name": "Gil Scott-Heron",
         "origin": "USA",
         "city": "New York",

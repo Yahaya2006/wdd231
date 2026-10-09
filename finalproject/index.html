@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,6 +37,59 @@
         </nav>
     </header>
     <main>
+        <section class="section-hero">
+            <div class="hero-inner">
+                <img src="images/plume.jpg" alt="Slamplume logo" width="200" height="150">
+                <div class="section-content">
+                    <h1>Welcome to Slamplume</h1>
+                    <p>Slamplume is a website dedicated to slam poetry, featuring a collection of poems and information about slam poets. Explore the world of slam poetry and discover the power of words.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-alt">
+            <div>
+                <h2>What is Slam Poetry?</h2>
+                <p>Slam poetry is a competitive art form in which poets perform their own original work and are judged by members of the audience. Unlike traditional poetry readings, slam is loud, passionate, and deeply personal. It is poetry with a pulse.</p>
+                <p>Performers use voice, movement, and emotion to bring their words to life. There are no props, no costumes — just the poet and their truth. The crowd becomes part of the performance, responding with snaps, cheers, and applause.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div>
+                <h2>A Brief History</h2>
+                <p>Slam poetry was born in Chicago in 1984, when construction worker and poet Marc Kelly Smith organized competitive poetry readings at the Green Mill Jazz Club. Frustrated with the elitism of traditional poetry, he wanted to bring poetry back to the people.</p>
+                <p>The movement quickly spread across the United States and then the world. Today, slam competitions are held in clubs, schools, theaters, and stadiums on every continent. The annual National Poetry Slam draws hundreds of teams from across North America.</p>
+            </div>
+        </section>
+
+        <section class="section-alt">
+            <div>
+                <h2>Poem of the Week</h2>
+                <div class="poem-card" id="poemCard">
+                <h3 id="poemTitle"></h3>
+                <p id="poemAuthor"></p>
+                <blockquote id="poemExcerpt"></blockquote>
+                <button id="loadPoemBtn">Read Another Poem</button>         
+            </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div>
+                <h2>NOTABLE SLAM POETS</h2>
+                <div class="notable" id="notablePoets"></div>
+                <button>Discover More Poets</button>
+            </div>
+        </section>
+
+        <section class="section-alt">
+            <div>
+                <h2>Ready to Find Your Voice?</h2>
+                <p>Join our slam poetry club and be part of a community that celebrates authentic expression.</p>
+                <button class="btn" onclick="location.href='contact.html'">Join the club</button>
+            </div>
+        </section>
 
     </main>
     <footer>

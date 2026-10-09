@@ -13,14 +13,16 @@
     <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/rules.js" defer></script>
 </head>
 <body>
-    <header>
+     <header>
         <div class="logo-container">
             <img src="images/logo.png" alt="site logo" width="200" height="150">
             <span class="logo-text">Slamplume</span>
-            <button id="ham-btn" class="hamburger" aria-label="navigation">☰</button>
+            <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
         </div>
         
         <nav id="nav-bar" class="navigation">
@@ -32,7 +34,69 @@
         </nav>
     </header>
     <main>
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Rules &amp; Famous Poets</h1>
+                <p>Everything you need to know about slam competitions and the voices that shaped this art form.</p>
+            </div>
+        </section>
 
+        <section class="content-section" id="rules">
+            <div class="container">
+                <h2>How a Slam Competition Works</h2>
+                <p>A poetry slam is a competitive event in which poets perform their original work and are scored by judges selected from the audience. Here are the fundamental rules:</p>
+                <div class="rules-grid" id="rulesGrid" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="content-section alt" id="scoring">
+            <div class="container">
+                <h2>The Scoring System</h2>
+                <p>Slam poetry uses a scoring system inspired by Olympic gymnastics. Five judges are selected randomly from the audience at the beginning of the event.</p>
+                <div class="scoring-steps">
+                    <article class="step">
+                        <div>
+                            <h3>Five Judges</h3>
+                            <p>Five audience members are selected as judges at random before the competition begins.</p>
+                        </div>
+                    </article>
+                    <article class="step">
+                        <div>
+                            <h3>Score from 0 to 10</h3>
+                            <p>Each judge gives a score between 0 and 10, including decimals. 10 is a perfect score.</p>
+                        </div>
+                    </article>
+                    <article class="step">
+                        <div>
+                            <h3>Drop High and Low</h3>
+                            <p>The highest and lowest scores are dropped to reduce bias. The three remaining scores are added.</p>
+                        </div>
+                    </article>
+                    <article class="step">
+                        <div>
+                            <h3>Maximum Score: 30</h3>
+                            <p>The maximum possible score for a single poem is 30 points (3 × 10).</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="poets">
+            <div class="container">
+                <h2>Famous Slam Poets</h2>
+                <p>These poets have shaped the world of slam poetry through their powerful performances and lasting impact.</p>
+                <div class="full-poets-grid" id="fullPoetsGrid" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="content-section alt" id="filter-section">
+            <div class="container">
+                <h2>Filter Poets by Origin</h2>
+                <div class="filter-bar" id="filterBar" role="group" aria-label="Filter poets by origin"></div>
+                <div class="full-poets-grid" id="filteredPoetsGrid" aria-live="polite"></div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="current-year"></span> Slamplume. All rights reserved.</p>
